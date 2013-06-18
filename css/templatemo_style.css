@@ -85,67 +85,66 @@ a.header { display: block; font-weight: 700 }
         z-index: 100;
 	background: url(../images/templatemo_header_bg.jpg) repeat-x
 }
-#templatemo_middle_wrapper {
-	width: 100%;
-        height: 420px !important;
-        top: 80px; left: 0; right: 0;
-	position: fixed;
-        z-index: 100;
-	background: url(../images/templatemo_slider_bg.jpg) repeat-x
+#templatemo_header {
+	height: 80px;
 }
+#templatemo_middle {
+  width: 100%;
+  height: 450px;
+/*        top: 80px; left: 0; right: 0;*/
+/*	position: fixed; */
+  z-index: 90;
+  background: url(../images/templatemo_slider_bg.jpg) repeat-x
+
+}
+#templatemo_slider {
+  padding: 100px 0;
+  width: 960px;
+  margin: 0 auto 0 auto;
+}
+
 #templatemo_bottom_wrapper {
-	width: 100%;
-	position: fixed;
-        bottom: 20px;
-        padding: 0px 0px 15px 0px;
-	background: #eae9e9
+  width: 100%;
+  /*        bottom: 20px;*/
+  padding: 0px 0px 15px 0px;
+  background: #eae9e9
 }
+#templatemo_bottom {
+  padding: 40px 10px 40px 10px;
+}
+
 #templatemo_footer_wrapper {
-	width: 100%;
-        height: 80px;
-	position: fixed;
-        bottom: 0; left: 0; right: 0;
-	background: #292727
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: #292727
+}
+#templatemo_footer {
+  padding: 20px 10px;
+  color: #CCCCCC;
 }
 .wrapper { 
 	width: 960px;
 	padding: 0 10px;
 	margin: 0 auto
 }
-#templatemo_main {
-/*        margin-top: 80px;
-        margin-bottom: 80px;*/
-        position: relative;
-        min-height: 100%;
-/*	padding: 40px 20px 20px 20px;*/
-        padding: 540px 0 100px 0;
-        margin: 0 auto 0 auto;
-	background: #fff
+#templatemo_main_wrapper {
+  position: relative;
+  min-height: 100%;
+  margin: 0 auto 0 auto;
+  background: #fff
 }
 
-#templatemo_scrollable {
-        height: 100%;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    -o-box-sizing:border-box;
-    -ms-box-sizing:border-box;
-    box-sizing:border-box;       
-}
-#templatemo_header {
-	height: 80px;
-}
-#templatemo_middle {
-	height: 440px;
-}
-#templatemo_slider {
-	padding: 60px 0;
-}
-#templatemo_bottom {
-	padding: 40px 10px 40px 10px;
-}
-#templatemo_footer {
-	padding: 20px 10px;
-	color: #CCCCCC;
+#templatemo_main {
+  height: 100%;
+  width: 960px;
+  margin: 0 auto 0 auto;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;       
 }
 
 .col { float: left; margin: 0 25px 25px 0 }
