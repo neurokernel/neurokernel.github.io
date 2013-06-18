@@ -2,19 +2,23 @@
 Credit: http://www.templatemo.com
 */
 
+html {
+        height: 100%;
+}
 body {
+        height: 100%;
 	margin: 0;
 	padding: 0;
 	color: #555;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 20px; 
 	background-color: #fff; 
 }
 
 h1, h2, h3, h4, h5, h6 {
 	color:#555;
-	font-weight:400;
+	font-weight:600; /* original: 400 */
 	padding: 0;
 	margin: 0;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
@@ -75,24 +79,57 @@ a.header { display: block; font-weight: 700 }
 
 #templatemo_header_wrapper {
 	width: 100%;
+        height: 80px !important;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 100;
 	background: url(images/templatemo_header_bg.jpg) repeat-x
 }
 #templatemo_middle_wrapper {
 	width: 100%;
+        height: 420px !important;
+        top: 80px; left: 0; right: 0;
+	position: fixed;
+        z-index: 100;
 	background: url(images/templatemo_slider_bg.jpg) repeat-x
 }
 #templatemo_bottom_wrapper {
 	width: 100%;
+	position: fixed;
+        bottom: 20px;
+        padding: 0px 0px 15px 0px;
 	background: #eae9e9
 }
 #templatemo_footer_wrapper {
 	width: 100%;
+        height: 80px;
+	position: fixed;
+        bottom: 0; left: 0; right: 0;
 	background: #292727
 }
 .wrapper { 
 	width: 960px;
 	padding: 0 10px;
 	margin: 0 auto
+}
+#templatemo_main {
+/*        margin-top: 80px;
+        margin-bottom: 80px;*/
+        position: relative;
+        min-height: 100%;
+/*	padding: 40px 20px 20px 20px;*/
+        padding: 540px 0 100px 0;
+        margin: 0 auto 0 auto;
+	background: #fff
+}
+
+#templatemo_scrollable {
+        height: 100%;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;       
 }
 #templatemo_header {
 	height: 80px;
@@ -103,12 +140,8 @@ a.header { display: block; font-weight: 700 }
 #templatemo_slider {
 	padding: 60px 0;
 }
-#templatemo_main {
-	padding: 40px 10px;
-	background: #fff
-}
 #templatemo_bottom {
-	padding: 40px 10px;
+	padding: 40px 10px 40px 10px;
 }
 #templatemo_footer {
 	padding: 20px 10px;
