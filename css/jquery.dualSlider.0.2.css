@@ -27,7 +27,7 @@
 }
 
 #carousel .backgrounds .item{
-  width: 460px;
+  width: 420px;
   height: 300px;
   float:left;
   z-index:1;
@@ -38,7 +38,6 @@
 }
 #carousel .backgrounds .item_2{
 }
-
 #carousel  .backgrounds .item_3{
 }
 
