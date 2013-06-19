@@ -123,13 +123,15 @@ a.header { display: block; font-weight: 700 }
   background: #292727
 }
 #templatemo_footer {
-  padding: 20px 10px;
+  padding: 30px 10px;  
+  margin: 0 auto 0 auto;
+  text-align: center;
   color: #CCCCCC;
 }
 .wrapper { 
-	  width: 960px;
-	padding: 0 10px;
-	margin: 0 auto
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto 0 auto;
 }
 #templatemo_main_wrapper {
   position: relative;
