@@ -2,43 +2,44 @@
 }
 
 .ddsmoothmenu ul {
-	z-index:100;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+  z-index:100;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 /*Top level list items*/
 .ddsmoothmenu ul li {
-	position: relative;
-	display: inline;
-	float: left;
+  position: relative;
+  display: inline;
+  float: left;
 }
 
 /*Top level menu link items style*/
 .ddsmoothmenu ul li a {
-	display: block;
-	height: 35px;
-	width: 100px;
-	margin-left: 10px;
-	line-height: 35px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	font-weight: bold;
-	color: #999;	
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	background: url(../images/templatemo_menu_item.jpg) 
+  display: block;
+  height: 35px;
+  width: 100px;
+  margin-left: 20px;
+  line-height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #999;	
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background: url(../images/templatemo_menu_item.jpg) 
 }
 
 * html .ddsmoothmenu ul li a { /*IE6 hack to get sub menu links to behave correctly*/
 	display: inline-block;
 }
 
-.ddsmoothmenu ul li a.selected, .ddsmoothmenu ul li a:hover { /*CSS class that's dynamically added to the currently active menu items' LI A element*/
-	color: #333;
-	background: url(../images/templatemo_menu_item_hover.jpg)
+/*CSS class that's dynamically added to the currently active menu items' LI A element*/
+.ddsmoothmenu ul li a.selected, .ddsmoothmenu ul li a:hover { 
+  color: #333;
+  background: url(../images/templatemo_menu_item_hover.jpg)
 }
 
 /*1st sub level menu*/

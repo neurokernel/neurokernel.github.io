@@ -4,15 +4,15 @@ Credit: http://www.templatemo.com
 
 html {
         height: 100%;
+        overflow-y: scroll;
 }
 body {
         height: 100%;
 	margin: 0;
 	padding: 0;
-	color: #555;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	line-height: 20px; 
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 26px; 
 	background-color: #fff; 
 }
 
@@ -106,13 +106,13 @@ a.header { display: block; font-weight: 700 }
   width: 100%;
   height: 410px;
   position: relative;
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 50px 0px;
   background: #eae9e9
 }
 #templatemo_bottom {
   width: 960px;
   height: 410px;
-  padding: 30px 10px 60px 10px;
+  padding: 30px 10px 100px 10px;
   margin: 0 auto 0 auto;
 }
 
@@ -121,6 +121,8 @@ a.header { display: block; font-weight: 700 }
   height: 80px;
   position: fixed;
   bottom: 0; left: 0; right: 0;
+  overflow: hidden;
+  z-index: 100;
   background: #292727
 }
 #templatemo_footer {
@@ -150,10 +152,60 @@ a.header { display: block; font-weight: 700 }
   height: 100%;
   width: 960px;
   margin: 0 auto 0 auto;
-  padding: 100px 0 20px 0;
+  padding: 120px 0 20px 0;
   position: relative;
   background: #fff;
   z-index: 0;
+}
+
+.banner { 
+    position: relative; 
+    overflow: auto; 
+    top: 90px;
+    width: 900px;
+    margin: 0 auto 0 auto;
+}
+.banner li { 
+    height: 300px;
+    width: 100%;
+    list-style: none; 
+}
+.banner ul li { 
+    float: left; 
+}
+.banner h1 {
+    color: #000;
+    font-size: 32px;
+}
+
+.banner .dots {
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    right: -350px;
+    margin: 0 auto 20px auto;
+}
+.banner .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    
+    text-indent: -999em;
+    
+    border: 2px solid #fff;
+    border-radius: 6px;
+ 
+    cursor: pointer;
+    opacity: .4;
+ 
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+.banner .dots li.active {
+    background: #fff;
+    opacity: 1;
 }
 
 .col { float: left; margin: 0 25px 25px 0 }
