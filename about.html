@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>About Neurokernel</title>
+<meta name="keywords" content="Neurokernel, Drosophila, brain emulation, computational neuroscience" />
+<meta name="description" content="About the Neurokernel Project" />
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+  mainmenuid: "templatemo_menu", //menu DIV id
+  orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+  classname: 'ddsmoothmenu', //class added to menu's outer DIV
+  //customtheme: ["#1c5a80", "#18374a"],
+  contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
+<script type="text/JavaScript" src="js/slimbox2.js"></script> 
+
+</head>
+<body>
+  
+  <div id="templatemo_header_wrapper">
+    <div id="templatemo_header" class="wrapper">
+      <div id="site_title"><a href="http://www.templatemo.com">Free CSS Templates</a></div>
+      <div id="templatemo_menu" class="ddsmoothmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="selected">About</a></li>          
+          <li><a href="downloads.html">Download</a></li>          
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <br style="clear: left" />
+      </div> <!-- /templatemo_menu -->
+    </div> <!-- /templatemo_header -->
+  </div> <!-- /templatemo_header_wrapper -->
+
+  <div id="templatemo_content_wrapper">
+    <div id="templatemo_main_wrapper">
+      <div id="templatemo_main">
+        <h1>Motivation</h1>
+      
+        <p>Reverse-engineering how biological neural circuits process
+        information is key to understanding human brain function, developing
+        effective therapies for psychiatric and neurological disease, and
+        designing powerful new computer architectures that can replicate the
+        formidable information processing capabilities of biological brains. To
+        achieve this goal, we must focus on a model organism capable of complex
+        behavioral and information processing tasks whose brain's structure is
+        within reach of current computational technology and whose neural
+        activity can be experimentally accessed.</p>
+        <br />
+
+        <h1>An Unprecedented Opportunity</h1>
+
+        <p>The fruit fly Drosophila melanogaster is capable of a range of
+        complex nonreactive behaviors driven by multiple sensory
+        modalities. Remarkably, these behaviors are governed by a brain
+        comprising only ~ 10<sup>5</sup> neurons!  An extensive toolbox of
+        powerful genetic manipulation techniques developed through years of
+        fruit fly research enables the visualization of the fly's neural
+        circuitry and analysis of how its structure relates to the fly's
+        behavior. This toolbox has enabled researchers to characterize the fly's
+        sensory mechanisms and shed light on the structure of its brain
+        connectivity map, or connectome. Recent work has revealed that the fly's
+        connectome comprises 40 unique modular subdivisions called<it>local processing units</it> (LPUs). Almost
+        all of these modules have been found to correspond to anatomical regions
+        of the fly brain associated with specific functional subsystems such as
+        sensation and locomotion. This suggests that LPUs can regarded as the
+        functional building blocks of the fly brain.</p>
+
+        <p>The computational tractability and genetic accessibility of the fly
+        brain have acquired increased importance in light of ongoing advances in
+        parallel computing and electrophysiological techniques. Graphics
+        Processing Units (GPUs) are a powerful and affordable commodity parallel
+        computing technology whose steady improvement promises the computational
+        power needed to test increasingly realistic neural circuit models of the
+        scale of the fly brain. While the fly's tiny size has made the recording
+        of neural activity from its brain challenging, innovative technologies
+        developed at the Bionet Group and elsewhere have made it possible to
+        contemplate the obtaining of simultaneous recording from multiple
+        neurons in the fly brain. Neuroscientists therefore have an
+        unprecedented opportunity to leverage these developments to build
+        powerful new models of the fly brain that are informed by hitherto
+        inaccessible knowledge regarding its structure and function.</p>
+        <br />
+
+        <h1>An Open Scalable Platform for Fruit Fly Brain Emulation</h1>
+
+        <p>The Neurokernel project aims to build an open software platform that
+        can scalably leverage the power of multiple GPUs to emulate the entire
+        fly brain. A key feature of the platform is its support for integrating
+        models of LPUs into models of entire functional subsystems. Neurokernel
+        defines a mandatory module interface for the communication of neuron
+        state data between LPU model implementations. Connectivity patterns
+        between any two LPUs are expressed independently both of other inter-LPU
+        connectivity patterns and the internal connectivity of the LPUs
+        themselves. Enforced LPU interoperability and the partitioning of the
+        fly connectome into connections responsible for distributing data
+        between processing modules and connections that are part of those
+        modules enables individual LPU models or connectivity patterns to be
+        improved or replaced without modification of other parts of a brain
+        emulation. This design facilitates the collaborative development of
+        whole-brain emulations by enabling the immediate interconnection of
+        independently developed LPU models with compatible
+        interfaces. Neurokernel's support for LPU model integration also enables
+        exploration of brain functions that cannot be exclusively attributed to
+        individual LPUs or brain subsystems.</p>
+
+        <p>A major goal of Neurokernel is to enable fly brain models to be
+        scaled up in computational complexity without necessitating their
+        reimplementation. To this end, Neurokernel will provide APIs that expose
+        the components required to implement and interconnect LPU models while
+        abstracting away the underlying GPU-dependent code that implements them;
+        this will also enable Neurokernel-based emulations to benefit from
+        future improvements in GPU technology. Neurokernel will also provide a
+        GPU resource management infrastructure that will enable brain emulations
+        to take advantage of multiple GPUs depending upon their availability.</p>
+        <br />
+
+        <h1>Help Build a Fly Brain!</h1>
+    
+        <p>Building an accurate emulation of the fly brain is an
+        interdisciplinary effort that requires data, algorithms, and insight
+        from (but not limited to) the fields of neuroscience, computer science,
+        and systems engineering. Researchers interested in working towards this
+        goal are invited to join the Neurokernel project. The platform software
+        is developed in Python (a powerful, high-level language that enjoys wide
+        popularity in the computational neuroscience community) and CUDA
+        (NVIDIA's C language extension for GPU programming). All design
+        specifications, documentation, and code are open-source and publicly
+        hosted on GitHub.</p>
+      </div> <!-- /templatemo_main -->
+    </div> <!-- /templatemo_main_wrapper -->
+
+    <div id="templatemo_bottom_wrapper">
+      <div id="templatemo_bottom">
+        
+        <div class="col one_fourth">
+          <h4>About</h4>
+          <p>Pellentesque ut erat id dolor pharetra pellentesque. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Sed pharetra varius libero sit amet ultrices. Suspendisse ac
+          sapien turpis. Donec congue dolor eu purus adipiscing fringilla.<a href="#">Read More</a></p>
+        </div>
+        
+        <div class="col one_fourth">
+          <h4>Photo Gallery</h4>
+          <ul class="footer_gallery">
+            <li><a href="images/templatemo_image_13_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_13.jpg" alt="image 1" /></a></li>
+            <li><a href="images/templatemo_image_12_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_12.jpg" alt="image 2" /></a></li>
+            <li><a href="images/templatemo_image_05_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_05.jpg" alt="image 3" /></a></li>
+            <li><a href="images/templatemo_image_06_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_06.jpg" alt="image 4" /></a></li>
+            <li><a href="images/templatemo_image_07_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_07.jpg" alt="image 5" /></a></li>
+            <li><a href="images/templatemo_image_08_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_08.jpg" alt="image 6" /></a></li>
+            <li><a href="images/templatemo_image_09_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_09.jpg" alt="image 7" /></a></li>
+            <li><a href="images/templatemo_image_10_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_10.jpg" alt="image 8" /></a></li>
+            <li><a href="images/templatemo_image_11_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_11.jpg" alt="image 9" /></a></li>
+          </ul>
+          <div class="clear"></div>
+          <a href="portfolio.html" class="more">more</a>
+        </div>
+        
+        <div class="col one_fourth">
+    	  <h4>Recent Posts</h4>
+          <ul class="no_bullet">
+            <li>
+              <span class="header"><a href="#">Duis id lacus ac odio varius</a></span>
+              Aliquam neque ipsum, aliquam eget auctor nec, malesuada sit amet
+              risus. Aliquam mollis viverra massa, vitae pulvinar odio accumsan.</li>
+              <li>
+                <span class="header"><a href="#">Nam ultricies euismod lorem</a></span>
+                    Nam ultricies euismod lorem vitae hendrerit. Ut sollicitudin, dolor at placerat lobortis, odio lectus ultricies velit, eget varius lorem ante.
+              </li>
+              <li>
+                <span class="header"><a href="#">Sed vel justo ut sodales nulla</a></span>
+              Sed molestie ultrices dolor, eu ullamcorper neque bibendum eu. In
+              mollis imperdiet sapien eget malesuada.</li>
+          </ul>
+        </div>
+        
+        <div class="col one_fourth no_margin_right">
+    	  <h4>Twitter</h4>
+          <ul class="no_bullet">
+            <li><a href="#">@templatemo</a> at scelerisque urna in tellus varius ultricies.</li>
+            <li>Suspendisse enean <a href="#">#FREE</a> tincidunt massa in tellus varius ultricies.</li>
+            <li> Aenean tincidunt massa in tellus varius ultricies. <a href="#">http://bit.ly/13IwZO</a></li>
+          </ul>
+        </div>
+      </div> <!-- /templatemo_bottom -->
+    </div> <!-- /templatemo_bottom_wrapper -->
+  </div> <!-- /template_main_wrapper -->
+  
+  <div id="templatemo_footer_wrapper">
+    <div id="templatemo_footer" class="wrapper">
+    Copyright © 2013 <a href="http://www.columbia.edu/~lev">Lev Givon</a> | Based on design by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a>
+    </div>
+  </div>
+    
+</body>
+</html>
