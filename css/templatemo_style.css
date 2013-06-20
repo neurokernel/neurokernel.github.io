@@ -36,22 +36,6 @@ h6 { font-size:14px }
 .right { float:right }
 
 img { margin: 0; padding: 0}
-.img_border { background: #ede8e8; padding: 4px; border: 1px solid #dcd5d5 }
-.img_frame { position: relative; display: block; padding: 7px }
-.img_frame span { position: absolute; top: 0; left: 0; z-index: 0 }
-.img_frame img, .img_frame iframe { position: absolute; top: 7px; left: 7px; z-index: 100 }
-.img_frame_13 { width: 280px; height: 157px }
-.img_frame_13 span { background: url(../images/templatemo_image_frame_13.png); width: 300px; height: 177px }
-.img_frame_14 { width: 203px; height: 108px }
-.img_frame_14 span { background: url(../images/templatemo_image_frame_14.png); width: 217px; height: 122px }
-.img_frame_23 { width: 616px; height: 216px }
-.img_frame_23 span { background: url(../images/templatemo_image_frame_23.png); width: 630px; height: 230px }
-.img_frame_12 { width: 451px; height: 245px }
-.img_frame_12 span { background: url(../images/templatemo_image_frame_12.png); width: 465px; height: 260px }
-.img_nom { display: block; margin-bottom: 15px }
-.img_fl { float: left; margin: 3px 15px 5px 0 }
-.img_fr { float: left; margin: 3px 0 5px 15px }
-
 
 a:link, a:visited { color:#e16715; text-decoration: none}
 a:hover { text-decoration:underline }
