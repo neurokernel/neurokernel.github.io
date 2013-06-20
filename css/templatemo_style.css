@@ -57,7 +57,10 @@ a:link, a:visited { color:#e16715; text-decoration: none}
 a:hover { text-decoration:underline }
 a:hover,a:active { outline:none }
 
-a.more, .submit_btn { clear: both; display: block; width: 80px; height: 25px; line-height: 25px; color: #fff; text-align: center; text-decoration: none; background: url(../images/templatemo_button.png) no-repeat }
+a.more, .submit_btn .btn { clear: both; display: block; width: 80px; height: 25px; line-height: 25px; color: #fff; text-align: center; text-decoration: none; background: url(../images/templatemo_button.png) no-repeat }
+
+.btn { clear: both; display: block; width: 80px; height: 25px; line-height: 25px; color: #fff; text-align: center; text-decoration: none; background: url(../images/templatemo_button.png) no-repeat }
+
 
 .submit_btn { border: none; cursor: pointer }
 
@@ -88,30 +91,38 @@ a.header { display: block; font-weight: 700 }
 #templatemo_header {
     height: 80px;
 }
-#templatemo_middle {
+#templatemo_middle_wrapper {
   width: 100%;
-  height: 450px;  
+  height: 380px;  
   position: relative;
-  margin: 0 0 -90px 0;
+  margin: 0 0 -80px 0;
   z-index: 90;
   background: url(../images/templatemo_slider_bg.jpg) repeat-x
 }
-#templatemo_slider {
-  padding: 100px 0;
+#templatemo_middle {
   width: 960px;
+  height: 380px;
+  text-align: center;
   margin: 0 auto 0 auto;
-  z-index: 90;
+  padding: 140px 0px 0px 0px;
+  color: #fff;
+}
+#templatemo_middle h1 {
+  color: #fff;
+  font-size: 60px;
+  line-height: 70px;
+  text-shadow: 2px 2px 2px #000;
 }
 #templatemo_bottom_wrapper {
   width: 100%;
-  height: 410px;
+  height: 60px;
   position: relative;
   padding: 0px 0px 50px 0px;
   background: #eae9e9
 }
 #templatemo_bottom {
   width: 960px;
-  height: 410px;
+  height: 60px;
   padding: 30px 10px 100px 10px;
   margin: 0 auto 0 auto;
 }
@@ -161,27 +172,25 @@ a.header { display: block; font-weight: 700 }
 .banner { 
     position: relative; 
     overflow: auto; 
-    top: 90px;
-    width: 900px;
-    margin: 0 auto 0 auto;
+    top: -20px;
+    left: -50px;
+    width: 840px;
+    text-align: center;
+    margin: 0 auto 0 auto;    
 }
 .banner li { 
-    height: 300px;
+    height: 200px;
     width: 100%;
     list-style: none; 
 }
 .banner ul li { 
     float: left; 
 }
-.banner h1 {
-    color: #000;
-    font-size: 32px;
-}
 
 .banner .dots {
     width: 100%;
     position: absolute;
-    bottom: -10px;
+    bottom: -20px;
     right: -350px;
     margin: 0 auto 20px auto;
 }
@@ -263,10 +272,22 @@ a.header { display: block; font-weight: 700 }
 	border: 1px solid #ccc;
 }
 
-#comment_form .submit_btn {
+#comment_form .submit_btn .btn {
 	display: block; width: 70px; height: 30px; line-height: 30px; padding: 0 8px; text-align: center; text-decoration: none; font-weight: bold;  background-color: #524239; border: 1px solid #2f2f2f; color: #fff; font-size:11px; cursor: pointer 
 }
-
+.big_btn {
+        float: right;
+        margin-top: 40px;
+        display: block;
+        width: 176px;
+        height: 44px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        background: url(../images/templatemo_slider_button.png);
+    font-size:1.2em;
+        font-weight: 700;
+}
 
 #gallery {
 	margin: 0; padding: 0; list-style: none;

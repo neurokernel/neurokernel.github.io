@@ -4,7 +4,7 @@
 .ddsmoothmenu ul {
   z-index:100;
   margin: 0;
-  padding: 0;
+  padding: 0 20px 0 0;
   list-style-type: none;
 }
 
