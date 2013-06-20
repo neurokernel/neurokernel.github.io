@@ -10,18 +10,18 @@ body {
         height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 26px; 
 	background-color: #fff; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color:#555;
+	color:#000;
 	font-weight:600; /* original: 400 */
 	padding: 0;
 	margin: 0;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+	font-family: Ubuntu, "Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 h1 { font-size:32px; margin-bottom: 20px; }
@@ -59,9 +59,6 @@ a:hover,a:active { outline:none }
 
 a.more, .submit_btn .btn { clear: both; display: block; width: 80px; height: 25px; line-height: 25px; color: #fff; text-align: center; text-decoration: none; background: url(../images/templatemo_button.png) no-repeat }
 
-.btn { clear: both; display: block; width: 80px; height: 25px; line-height: 25px; color: #fff; text-align: center; text-decoration: none; background: url(../images/templatemo_button.png) no-repeat }
-
-
 .submit_btn { border: none; cursor: pointer }
 
 em { color: #555 }
@@ -93,7 +90,7 @@ a.header { display: block; font-weight: 700 }
 }
 #templatemo_middle_wrapper {
   width: 100%;
-  height: 380px;  
+  height: 360px;  
   position: relative;
   margin: 0 0 -80px 0;
   z-index: 90;
@@ -101,7 +98,7 @@ a.header { display: block; font-weight: 700 }
 }
 #templatemo_middle {
   width: 960px;
-  height: 380px;
+  height: 360px;
   text-align: center;
   margin: 0 auto 0 auto;
   padding: 140px 0px 0px 0px;
@@ -109,22 +106,73 @@ a.header { display: block; font-weight: 700 }
 }
 #templatemo_middle h1 {
   color: #fff;
-  font-size: 60px;
+  font-size: 56px;
   line-height: 70px;
   text-shadow: 2px 2px 2px #000;
 }
+a.big_orange_btn {
+    margin-top: 40px;
+    display: block;
+    width: 176px;
+    height: 44px;
+    line-height: 40px;
+    text-align: center;
+    color: #292727;
+    background: url(../images/templatemo_slider_button.png);
+    font-size:1.2em;
+    font-weight: 700;
+}
+
 #templatemo_bottom_wrapper {
   width: 100%;
-  height: 60px;
-  position: relative;
-  padding: 0px 0px 50px 0px;
-  background: #eae9e9
+  height: 40px;
+  position: fixed;
+  bottom: 80px; left: 0; right: 0;
+  overflow: hidden;
+  z-index: 100;
+  background: url(../images/templatemo_bottom_bg.jpg) repeat-x
 }
 #templatemo_bottom {
-  width: 960px;
-  height: 60px;
-  padding: 30px 10px 100px 10px;
+  padding: 7px;
+/*  border-top-style: solid;
+  border-color: #292727;
+  border-width: 1px;*/
+  z-index: 100;
   margin: 0 auto 0 auto;
+  text-align: center;  
+}
+#templatemo_bottom ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none;
+    text-align: center;
+}
+#templatemo_bottom ul li {
+    display: inline
+}
+#templatemo_bottom ul li a {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+#templatemo_bottom ul li:after {
+    content: "\00b7";    
+    color: #fff;
+    padding: 0 30px 0 30px;
+}
+#templatemo_bottom ul li.nobullet:after {
+  content: none;
+}
+
+a.btn_120 { 
+    clear: both; 
+    display: block;
+    width: 120px; 
+    height: 25px; 
+    line-height: 25px; 
+    color: #fff; 
+    text-align: center; 
+    text-decoration: none; 
+    background: url(../images/templatemo_button_120.png) no-repeat; 
 }
 
 #templatemo_footer_wrapper {
@@ -137,11 +185,32 @@ a.header { display: block; font-weight: 700 }
   background: #292727
 }
 #templatemo_footer {
-  padding: 30px 10px;  
+  padding: 30px;
   margin: 0 auto 0 auto;
   text-align: center;
   color: #CCCCCC;
 }
+#templatemo_footer img {
+    vertical-align: middle;
+}
+#templatemo_footer ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none;
+    text-align: center;
+}
+#templatemo_footer ul li {
+    display: inline
+}
+#templatemo_footer ul li:after {
+    content: "\00b7";    
+    color: #CCCCCC;
+    padding: 0 30px 0 30px;
+}
+#templatemo_footer ul li.nobullet:after {
+  content: none;
+}
+
 .wrapper { 
   width: 960px;
   padding: 0 10px;
@@ -151,7 +220,8 @@ a.header { display: block; font-weight: 700 }
   position: relative;
   min-height: 100%;
   margin: 0 auto 0 auto;
-  background: #eae9e9;
+  //  background: #eae9e9;
+  background: #fff;
 }
 #templatemo_main_wrapper {
   width: 100%;
@@ -163,7 +233,7 @@ a.header { display: block; font-weight: 700 }
   height: 100%;
   width: 960px;
   margin: 0 auto 0 auto;
-  padding: 120px 0 20px 0;
+  padding: 120px 0 120px 0;
   position: relative;
   background: #fff;
   z-index: 0;
@@ -174,7 +244,7 @@ a.header { display: block; font-weight: 700 }
     overflow: auto; 
     top: -20px;
     left: -50px;
-    width: 840px;
+    width: 940px;
     text-align: center;
     margin: 0 auto 0 auto;    
 }
@@ -222,7 +292,7 @@ a.header { display: block; font-weight: 700 }
 .one_third { width: 300px }
 #content, .two-third { width: 630px }
 #sidebar { width: 300px }
-.one_fourth { width: 216px }
+.one_fourth { width: 216px; text-align: center; }
 
 #site_title { float: left; margin-top: 20px }
 #site_title a { display: block; font-size: 12px; font-family: Georgia, "Times New Roman", Times, serif; width: 246px; height: 54px; color: #acacac; text-indent: -10000px; background: url(../images/templatemo_logo.png) no-repeat top left }
@@ -274,19 +344,6 @@ a.header { display: block; font-weight: 700 }
 
 #comment_form .submit_btn .btn {
 	display: block; width: 70px; height: 30px; line-height: 30px; padding: 0 8px; text-align: center; text-decoration: none; font-weight: bold;  background-color: #524239; border: 1px solid #2f2f2f; color: #fff; font-size:11px; cursor: pointer 
-}
-.big_btn {
-        float: right;
-        margin-top: 40px;
-        display: block;
-        width: 176px;
-        height: 44px;
-        line-height: 40px;
-        text-align: center;
-        color: #fff;
-        background: url(../images/templatemo_slider_button.png);
-    font-size:1.2em;
-        font-weight: 700;
 }
 
 #gallery {

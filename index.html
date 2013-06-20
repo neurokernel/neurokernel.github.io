@@ -7,6 +7,8 @@
 <meta name="description" content="Neurokernel project website" />
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -35,13 +37,25 @@ ddsmoothmenu.init({
 <script type="text/javascript">
 $(function() {
   $('.banner').unslider({
-    speed: 750,               //  The speed to animate each slide (in milliseconds)
-    delay: 2000,              //  The delay between slide animations (in milliseconds)
+    speed: 1000,               //  The speed to animate each slide (in milliseconds)
+    delay: 5000,              //  The delay between slide animations (in milliseconds)
     complete: function() {},  //  A function that gets called after every slide animation
     keys: true,               //  Enable keyboard (left, right) arrow shortcuts
     dots: true,               //  Display dot navigation
     fluid: false              //  Support responsive design. May break non-responsive designs
   });
+});
+</script>
+
+<script>
+$(function() {
+    var lastElement = false;
+    $("ul li").each(function() {
+        if (lastElement && lastElement.offset().top != $(this).offset().top) {
+            $(lastElement).addClass("nobullet");
+        }
+        lastElement = $(this);
+    }).last().addClass("nobullet");
 });
 </script>
 
@@ -72,9 +86,9 @@ $(function() {
         <div class="banner">
           <ul>
             <li><h1>Want to Build a Fly Brain?</h1></li>
-            <li><h1>Want to Run it on Commodity Hardware?</h1></li>
+            <li><h1>Want to Run It On Commodity Hardware?</h1></li>
             <li><h1>Get the Code and Start Hacking!</h1></li>
-            <li><img style="margin: -50px 50px 0 0;" src="images/slider/fly.png" /></li>
+            <li><img style="margin: -40px 50px 0 0;" src="images/neurokernel-horizontal-transparent-white.png" /></li>
           </ul>
         </div>
       </div> <!-- /templatemo_middle -->
@@ -82,136 +96,45 @@ $(function() {
 
     <div id="templatemo_main_wrapper">    
       <div id="templatemo_main">
-        <h1>BLAH</h1>
+        <h1>What Is It?</h1>
         <p>The Neurokernel project aims to build an open software platform for 
-          the emulation of the entire 
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah</p>
+        the emulation of the entire brain of the fruit fly <i>Drosophila melanogaster</i> on multiple 
+        Graphics Processing Units (GPUs). Read more <a href="about.html">here</a>.</p>
+        <br />
 
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah</p>
-
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah</p>
-
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah</p>
-
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah</p>
-
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah</p>
-
-      </div>
-    </div>
-
-    <div id="templatemo_bottom_wrapper">
-      <div id="templatemo_bottom">
-        
-        <div class="col one_fourth">
-          <h4>About</h4>
-          <p>blah</p>
-        </div>
-        
-        <div class="col one_fourth">
-          <h4>Photo Gallery</h4>
-          <p>blah</p>
-        </div>
-        
-        <div class="col one_fourth">
-          <h4>Recent Posts</h4>
-          <p>blah</p>
-        </div>
-        
-        <div class="col one_fourth no_margin_right">
-          <h4>Twitter</h4>
-        </div>    
-      </div> <!-- /templatemo_bottom_wrapper -->
-    </div> <!-- /templatemo_main -->
+        <h1>How Can I Try It?</h1>
+        <p><a href="http://github.com/neurokernel/neurokernel/archive/master.zip">Grab</a> the distribution package and
+        read the <a href="http://github.com/neurokernel/neurokerne/wiki/quickstart">quick start</a>
+        guide.</p>
+        <br />
+     
+        <h1>How Can I Get Involved?</h1>
+        <p>Interested? Great! <a href="contact.html">Join</a> the project mailing list,  
+          <a href="http://github.com/neurokernel/neurokernel">clone</a> the source from GitHub, and start submitting <a href="http://github.com/neurokernel/neurokernel/issues">bug reports</a> and 
+          <a href="http://github.com/neurokernel/neurokernel/pulls">pull requests</a>.</p>
+          
+      </div> <!-- /templatemo_main -->
+    </div> <!-- /templatemo_main_wrapper -->
   </div>  <!-- /templatemo_content_wrapper -->
 
+  <div id="templatemo_bottom_wrapper">
+    <div id="templatemo_bottom">
+      <ul>
+        <li><a href="http://github.com/neurokernel/neurokernel/">Code</a></li>
+        <li><a href="http://github.com/neurokernel/neurokernel/wiki">Documentation</a></li>          
+        <li><a href="http://github.com/neurokernel/neurokernel/issues">Issue Tracker</a></li>
+        <li><a href="http://www.bionet.ee.columbia.edu">Bionet</a></li>
+      </ul>
+    </div> <!-- /templatemo_bottom -->
+  </div> <!-- /templatemo_bottom_wrapper -->
+
   <div id="templatemo_footer_wrapper">
-    <div id="templatemo_footer" class="wrapper">
-  Copyright © 2013 <a href="http://www.columbia.edu/~lev">Lev Givon</a> | Based on design by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a>
+    <div id="templatemo_footer">
+      <ul>
+        <li>Copyright © 2013 <a href="http://www.columbia.edu/~lev">Lev Givon</a></li>
+        <li><img src="images/seas_crown.png" /></li>
+        <li>Design by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a></li>
+      </ul>
     </div>
   </div>
 
