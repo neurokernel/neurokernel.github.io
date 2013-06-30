@@ -49,10 +49,10 @@
   padding: 2px 0;
 
   /* Add "stitching" effect */
-  border-width: 1px 0;
-  border-style: dotted;
+  /*border-width: 1px 0;
+  border-style: dotted;*/
   /*border-color: rgba(255,255,255,0.7);*/
-  border-color: #333333;
+  /*border-color: #333333;*/
 }
 
 .github-fork-ribbon-wrapper {
@@ -69,10 +69,12 @@
 }
 
 .github-fork-ribbon-wrapper.left {
+  position: fixed;
   left: 0;
 }
 
 .github-fork-ribbon-wrapper.right {
+  position: fixed;
   right: 0;
 }
 
