@@ -1,7 +1,7 @@
 /*
 Original design: Basic Businesscard (v1.0 - Jan 20, 2011) - A free xhtml/css website template by Andreas Viklund.
 For more information, see http://andreasviklund.com/templates/basic-businesscard/
-Modifications by Lev Givon (March 14, 2011)
+Modifications by Lev Givon (July 3, 2013)
 */
 
 /* Main layout and header */
@@ -14,7 +14,7 @@ body {background:#eee url(img/bg.jpg) top center no-repeat; color:#555; font:83%
 #footer {width:590px; color:#aaa; font-size:0.8em; margin:20px auto; text-align:center;}
 #footer a {color:#aaa;}
 
-h1 {font-size:3em; padding:25px 0 0 0; font-weight:400; text-shadow:2px 2px 4px #bbb;}
+h1 {font-size:2.75em; padding:25px 0 0 0; font-weight:400; text-shadow:2px 2px 4px #bbb;}
 h2 {font-size:1.6em; margin:-15px 0 25px 0; font-weight:400; text-shadow:2px 2px 4px #bbb;}
 h2.slogan {; color:#777; text-shadow:2px 2px 4px #ccc;}
 a {color:#b75858; text-decoration:none;}
