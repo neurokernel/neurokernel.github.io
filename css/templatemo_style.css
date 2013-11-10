@@ -74,20 +74,21 @@ a.header { display: block; font-weight: 700 }
 }
 #templatemo_middle_wrapper {
   width: 100%;
-  height: 360px;  
+  height: 210px;  
   position: relative;
-  margin: 0 0 -80px 0;
+  margin: 0 0 -90px 0;
+  padding: 120px 0 0 0 ;
   z-index: 90;
   background: url(../images/templatemo_slider_bg.jpg) repeat-x
 }
 #templatemo_middle {
   width: 960px;
-  height: 360px;
+  height: 210px;
   text-align: center;
   margin: 0 auto 0 auto;
-  padding: 140px 0px 0px 0px;
   color: #fff;
 }
+
 #templatemo_middle h1 {
   color: #fff;
   font-size: 56px;
@@ -111,7 +112,7 @@ a.big_orange_btn {
   width: 100%;
   height: 40px;
   position: fixed;
-  bottom: 80px; left: 0; right: 0;
+  bottom: 60px; left: 0; right: 0;
   overflow: hidden;
   z-index: 100;
   background: url(../images/templatemo_bottom_bg.jpg) repeat-x
@@ -161,7 +162,7 @@ a.btn_120 {
 
 #templatemo_footer_wrapper {
   width: 100%;
-  height: 80px;
+  height: 60px;
   position: fixed;
   bottom: 0; left: 0; right: 0;
   overflow: hidden;
@@ -169,7 +170,7 @@ a.btn_120 {
   background: #292727
 }
 #templatemo_footer {
-  padding: 30px;
+  padding: 15px;
   margin: 0 auto 0 auto;
   text-align: center;
   color: #CCCCCC;
@@ -273,6 +274,8 @@ a.btn_120 {
 
 .col { float: left; margin: 0 25px 25px 0 }
 .half { width: 465px; margin-bottom: 30px }
+.half_left { float: left; width: 465px; margin: 0 20px 0 20px}
+.half_right { width: 465px; margin: 0 20px 0 465px}
 .one_third { width: 300px }
 #content, .two-third { width: 630px }
 #sidebar { width: 300px }
@@ -368,3 +371,6 @@ a.btn_120 {
 
 .no_margin_right { margin-right: 0 }
 .last_box { margin-bottom: 0; background: none }
+pre {
+    margin: 0 0 0 -100px;
+}
