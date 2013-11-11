@@ -1,5 +1,5 @@
 /*
-Credit: http://www.templatemo.com
+Based upon code from http://www.templatemo.com
 */
 
 html {
@@ -373,4 +373,15 @@ a.btn_120 {
 .last_box { margin-bottom: 0; background: none }
 pre {
     margin: 0 0 0 -100px;
+}
+
+th {
+    /*background: #E0E0E0;*/
+    background: #080808;
+    color: #cccccc;
+}
+
+td {
+    padding: 5px 5px 5px 5px;
+    background: #cccccc;
 }
