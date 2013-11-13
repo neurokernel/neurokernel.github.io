@@ -371,6 +371,10 @@ a.btn_120 {
 
 .no_margin_right { margin-right: 0 }
 .last_box { margin-bottom: 0; background: none }
+table {
+    width: 100%;
+}
+
 pre {
     margin: 0 0 0 -100px;
 }
