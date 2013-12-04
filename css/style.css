@@ -386,6 +386,14 @@ th {
 }
 
 td {
+	min-width: 100px;
     padding: 5px 5px 5px 5px;
     background: #cccccc;
+}
+
+td.first {
+	min-width: 120px;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	background: #cccccc;
 }
