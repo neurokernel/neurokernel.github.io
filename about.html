@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Neurokernel, Drosophila, brain emulation, computational neuroscience" />
+    <meta name="description" content="Neurokernel Project" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="ico/favicon.png" />
+
+    <title>Neurokernel</title>
+
+    <!-- Make sure Ubuntu fonts are available -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <div class="navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Neurokernel</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="about.html">About</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="docs.html">Documents</a></li>
+            <li><a href="contact.html">Get Involved</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!--navbar-->
+
+    <div class="jumbotron">
+      <img src="./img/neurokernel_big_logo.png" alt="" />
+    </div>
+    <div class="container">      
+      <div class="col-md-12">
+        <h1>Motivation</h1>
+      
+        <p>Reverse-engineering how biological neural circuits process
+        information is key to understanding human brain function, developing
+        effective therapies for psychiatric and neurological disease, and
+        designing powerful new computer architectures that can replicate the
+        formidable information processing capabilities of biological brains. To
+        achieve this goal, we must focus on a model organism capable of complex
+        behavioral and information processing tasks whose brain structure is
+        within reach of current computational technology and whose neural
+        activity can be experimentally accessed.</p>
+        <br />
+
+        <h1>An Unprecedented Opportunity</h1>
+
+        <p>The fruit fly <i>Drosophila melanogaster</i> is capable of a range of
+        complex nonreactive behaviors driven by multiple sensory
+        modalities. Remarkably, these behaviors are governed by a brain
+        comprising only ~ 10<sup>5</sup> neurons!  An extensive toolbox of
+        powerful genetic manipulation techniques developed through years of
+        fruit fly research enables the visualization of the fly's neural
+        circuitry and analysis of how its structure relates to the fly's
+        behavior. This toolbox has enabled researchers to characterize the fly's
+        sensory mechanisms and shed light on the structure of its brain
+        connectivity map, or connectome. 
+          <a href="http://www.cell.com/current-biology/abstract/S0960-9822%2810%2901522-8">Recent work</a> has revealed that the fly's
+        connectome comprises 40 unique modular subdivisions called 
+          <i>local processing units</i> (LPUs). Almost
+        all of these modules have been found to correspond to anatomical regions
+        of the fly brain associated with specific functional subsystems such as
+        sensation and locomotion. LPUs can therefore be regarded as
+        functional building blocks of the fly brain.</p>
+
+        <p>The computational tractability and genetic accessibility of the fly
+        brain have acquired increased importance in light of ongoing advances in
+        parallel computing and electrophysiological techniques. Graphics
+        Processing Units (GPUs) are a powerful and affordable commodity parallel
+        computing technology whose steady improvement promises the computational
+        power needed to test increasingly realistic neural circuit models of the
+        scale of the fly brain. While the fly's tiny size has made the recording
+        of neural activity from its brain challenging, innovative technologies
+        developed at the <a href="http://www.bionet.ee.columbia.edu">Bionet Group</a>
+        and elsewhere have made it possible to contemplate the obtaining of
+        simultaneous recording from multiple neurons in the fly
+        brain. Neuroscientists therefore have an unprecedented opportunity to
+        leverage these developments to build powerful new models of the fly
+        brain that are informed by hitherto inaccessible knowledge regarding its
+        structure and function.</p>
+        <br />
+
+        <h1>An Open Scalable Platform for Fruit Fly Brain Emulation</h1>
+
+        <p>The Neurokernel project aims to build an open software platform that
+        can scalably leverage the power of multiple GPUs to emulate the entire
+        fly brain. A key feature of the platform is its support for integrating
+        models of LPUs into models of entire functional subsystems. Neurokernel
+        defines a mandatory module interface for the communication of neuron
+        state data between LPU model implementations. Connectivity patterns
+        between any two LPUs are expressed independently both of other inter-LPU
+        connectivity patterns and the internal connectivity of the LPUs
+        themselves. Enforced LPU interoperability and the partitioning of the
+        fly connectome into connections responsible for distributing data
+        between processing modules and connections that are part of those
+        modules enables individual LPU models or connectivity patterns to be
+        improved or replaced without modification of other parts of a brain
+        emulation. This design facilitates the collaborative development of
+        whole-brain emulations by enabling the immediate interconnection of
+        independently developed LPU models with compatible
+        interfaces. Neurokernel's support for LPU model integration also enables
+        exploration of brain functions that cannot be exclusively attributed to
+        individual LPUs or brain subsystems.</p>
+
+        <p>A major goal of Neurokernel is to enable fly brain models to be
+        scaled up in computational complexity without necessitating their
+        reimplementation. To this end, Neurokernel will provide APIs that expose
+        the components required to implement and interconnect LPU models while
+        abstracting away the underlying GPU-dependent code that implements them;
+        this will also enable Neurokernel-based emulations to benefit from
+        future improvements in GPU technology. Neurokernel will also provide a
+        GPU resource management infrastructure that will enable brain emulations
+        to take advantage of multiple GPUs depending upon their availability.</p>
+        <br />
+
+        <h1>Help Build a Fly Brain!</h1>
+    
+        <p>Building an accurate emulation of the fly brain is an
+        interdisciplinary effort that requires data, algorithms, and insight
+        from (but not limited to) the fields of neuroscience, computer science,
+        and systems engineering. Researchers interested in working towards this
+        goal are invited to join the Neurokernel project. The platform software
+        is developed in Python (a powerful, high-level language that enjoys wide
+        popularity in the computational neuroscience community) and CUDA
+        (NVIDIA's C language extension for GPU programming). All design
+        specifications, documentation, and code are <a href="http://opensource.org/licenses/BSD-3-Clause">open-source</a>
+        and <a href="http://github.com/neurokernel/neurokernel">publicly hosted</a> on GitHub.</p>
+      </div>      
+    </div><!-- /.container -->
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2012-2014 Lev Givon</p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
