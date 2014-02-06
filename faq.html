@@ -20,6 +20,9 @@
     <!-- Custom styles for this template -->
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -32,28 +35,51 @@
 
   <body role="document">
 
-    <a href="https://github.com/neurokernel/neurokernel"><img style="z-index:9999; position: fixed; top: 0; right: 0; border: 0;" src="./img/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <!--a id="fork" href="https://github.com/neurokernel/neurokernel"><img style="z-index:9999; position: fixed; top: 0; right: 0; border:
+            0;" src="./img/forkme_right_gray_6d6d6d.png" alt="Fork me on
+    GitHub"></a-->
+    <div id="fork" class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+        <a href="https://github.com/neurokernel/neurokernel">Fork me on GitHub</a>
+        </div>
+    </div>
 
     <div id="wrap">
-      <div class="navbar-inverse navbar-default navbar-fixed-top" role="navigation">
-        <div class="navbar-inner">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">
-                <img src="./img/fly-transparent-small.png"> Neurokernel</a>				
-            </div>
-            <ul class="nav navbar-nav">
-              <li><a href="about.html">About</a></li>
-              <li class="active"><a href="faq.html">FAQ</a></li>
-	      <li><a href="docs.html">Documents</a></li>
-	      <li><a href="people.html">People</a></li>
-              <li><a href="contact.html">Get Involved</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <div class="navbar-wrapper">
+        <div class="container">
 
-      <div class="container">      
+          <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                </button>
+                <a id="github" style="position:relative; float:right; top:12px;
+                    right:35px;" href="https://github.com/neurokernel/neurokernel">
+                    <img style="position:absolute;  width:25px;
+                    height:25px; float:right" src="img/github.png">
+                </a>
+
+                <a class="navbar-brand" href="index.html"><img src="./img/fly-transparent-small.png">Neurokernel</a>
+              </div>
+              <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="docs.html">Documents</a></li>
+                  <li><a href="people.html">People</a></li>
+                  <li class="active"><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact.html">Get Involved</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- navbar-wrap -->
+
+      <div class="container">
         <div class="col-md-12">
           <div class="page-header" style="padding-top: 40px;">
             <h1>Frequently Asked Questions</h1>
@@ -61,13 +87,13 @@
 
           <h2>General Questions</h2>
 
-          <h3>What is Neurokernel?</h3>
+          <h4>What is Neurokernel?</h4>
           
           <p>Neurokernel is an open software platform implemented in Python for the emulation
           and validation of fruit fly (<i>Drosophila melanogaster</i>) brain models
           on multiple Graphics Processing Units (GPUs).</p>
           
-          <h3>Isn't Neurokernel just another neural circuit simulator?</h3>
+          <h4>Isn't Neurokernel just another neural circuit simulator?</h4>
 
           <p>In short, <i>no</i>!</p>
 
@@ -95,8 +121,8 @@
           provide the programmability (i.e., software interfaces and computational models)
           required by the constituent elements of a fly brain model.</p>
 
-          <h3>Why does Neurokernel use GPUs rather than some other
-          high-performance computing technology?</h3>
+          <h4>Why does Neurokernel use GPUs rather than some other
+          high-performance computing technology?</h4>
 
           <p>Developing a successful emulation of the fly brain is a nontrivial undertaking
           that requires the combined efforts of many researchers. To enable and facilitate
@@ -118,8 +144,8 @@
           for developing a near-real-time model of the entire fly brain at the present
           time (2014).
 
-          <h3>The fruit fly's brain is too simple. Isn't the mammalian/primate/human brain
-          more interesting?</h3>
+          <h4>The fruit fly's brain is too simple. Isn't the mammalian/primate/human brain
+          more interesting?</h4>
 
           <p>Although the brains of higher organisms can support a range of abilities that go
           beyond those of a fly, the number of neurons and synapses in even "simpler"
@@ -149,8 +175,8 @@
           of the fruit fly; this suggests that insight obtained by focusing on
           <i>Drosophila</i> will prove useful in understanding the mammalian brain.</p>
 
-          <h3>The fruit fly's brain is far more complex than other model
-          organisms. Why not focus on them instead?</h3>
+          <h4>The fruit fly's brain is far more complex than other model
+          organisms. Why not focus on them instead?</h4>
 
           <p>Although emulation of the fly brain may superficially seem more daunting than
           developing models of the nervous systems of simpler organisms, there are reasons
@@ -164,8 +190,8 @@
 
           <h2>Neurokernel Architecture</h2>
 
-          <h3>What are local processing units (LPUs) and why are they
-          significant?</h3>
+          <h4>What are local processing units (LPUs) and why are they
+          significant?</h4>
 
           <p>Determining how the brain's highly complex structure implements specific
           functions requires its decomposition into functional modules whose input-output
@@ -187,8 +213,8 @@
           individual LPU and determining how specific patterns of axonal connectivity
           integrate them into functional subsystems.</p>
 
-          <h3>What's the difference between synaptic and axonal connectivity
-          patterns?</h3>
+          <h4>What's the difference between synaptic and axonal connectivity
+          patterns?</h4>
 
           <p>An LPU comprises two populations of neurons, i.e., its local neurons (which
           project exclusively to other neurons comprised by the LPU), and its projection
@@ -200,12 +226,12 @@
 
           <h2>Using Neurokernel</h2>
 
-          <h3>How do I download and install it?</h3>
+          <h4>How do I download and install it?</h4>
 
           <p>See the installation instructions 
           <a href="https://github.com/neurokernel/neurokernel/wiki/Installation">here</a>.</p>
 
-          <h3>Are there any examples of how to use Neurokernel?</h3>
+          <h4>Are there any examples of how to use Neurokernel?</h4>
 
           <p>Yes! Take a look in the
           <a href="https://github.com/neurokernel/neurokernel/tree/master/examples">examples</a> folder and 
@@ -213,7 +239,7 @@
           These examples include partial models of the fly's olfactory and vision systems that are based upon 
           actual fly connectome data.</p>
 
-          <h3>What neuron and synapse models does Neurokernel support?</h3>
+          <h4>What neuron and synapse models does Neurokernel support?</h4>
 
           <p>Neurokernel currently provides sample implementations of a select
           number of neural component models and compatible synapse models; these
@@ -224,8 +250,8 @@
           below). We expect to extend this set of primitives with additional
           components required by future LPU models.</p>
 
-          <h3>Can Neurokernel load LPU models specified using formats such as
-          NeuroML?</h3>
+          <h4>Can Neurokernel load LPU models specified using formats such as
+          NeuroML?</h4>
 
           <p>Neurokernel can currently load LPU models specified in
           <a href="http://www.gexf.net">GEXF</a>, a widely supported graph storage format that
@@ -236,7 +262,7 @@
           you have a proposal for a model specification mechanism with other advantages,
           feel free to let us know!</p>
 
-          <h3>Can Neurokernel's performance could be improved?</h3>
+          <h4>Can Neurokernel's performance be improved?</h4>
 
           <p>Certainly.</p>
 
@@ -260,11 +286,11 @@
           development of the kernel into a near-ubiquitous basis for high-performance
           operating systems.</p>
 
-          <!--<h3>What about API documentation?</h3>
+          <!--<h4>What about API documentation?</h4>
 
           <p>Right here: (link to Sphinx-generated API documentation)</p> -->
 
-          <h3>I have a question!</h3>
+          <h4>I have a question!</h4>
 
           <p>Join the project
           <a href="https://lists.columbia.edu/mailman/listinfo/neurokernel-dev">mailing list</a> and fire away!
@@ -273,8 +299,8 @@
 
           <h2>How to Participate in Neurokernel Development</h2>
 
-          <h3>What is an RFC and why are they important to Neurokernel's
-          development?</h3>
+          <h4>What is an RFC and why are they important to Neurokernel's
+          development?</h4>
 
           <p>First employed in the development of the Internet (see
           <a href="http://tools.ietf.org/html/rfc2026">RFC 2026</a>) and used more recently in
@@ -293,33 +319,33 @@
           released under the <a href="http://www.opencontent.org/openpub/">Open Publication
             License</a>.</p>
 
-          <h3>Can I submit an RFC? How do I go about it?</h3>
+          <h4>Can I submit an RFC? How do I go about it?</h4>
 
           <p>Yes! Contact the Neurokernel developers via the project mailing list to have
           your RFC reviewed and uploaded to the Neurokernel site.</p>
 
-          <h3>I'm interested in modeling a certain LPU. Has it already been
-            modeled?</h3>
+          <h4>I'm interested in modeling a certain LPU. Has it already been
+            modeled?</h4>
 
           <p>A list of the LPUs and hubs in the fly brain with links to currently implemented
           models is available on the project
           <a href="https://github.com/neurokernel/neurokernel/wiki/LPU-List">wiki</a>.</p>
 
-          <h3>I've written a new Neurokernel-based LPU model. How can I share it?</h3>
+          <h4>I've written a new Neurokernel-based LPU model. How can I share it?</h4>
 
           <p>Submit the model as a 
           <a href="http://github.com/neurokernel/neurokernel/pulls">pull request</a>
           on GitHub and write an RFC describing details of the model.</p>
 
-          <h3>I want to propose a Great New Feature for Neurokernel. How can I do
-            so?</h3>
+          <h4>I want to propose a Great New Feature for Neurokernel. How can I do
+            so?</h4>
 
           <p>Feel free to moot your idea on the project mailing list. If the
           feature is nontrivial and cannot be described briefly, writing an RFC
           that clearly delineates the proposal would be very helpful.</p>
 
-          <h3>I've written some new code for Neurokernel. How can I have it
-          incorporated into the project's code base?</h3>
+          <h4>I've written some new code for Neurokernel. How can I have it
+          incorporated into the project's code base?</h4>
 
           <p>Submit your new code as a pull request or (if the code is relatively brief) an
           enhancement issue. Note that Neurokernel is developed under the 
@@ -334,9 +360,11 @@
       </div><!-- container -->
     </div><!-- wrap -->
 
-    <div id="footer">
-      <div class="container text-center">
-        <p>© 2013-2014 Lev Givon</p>
+    <div id=footer_wrapper>
+      <div id="footer">
+        <p>Copyright © 2013-2014 <a href="http://www.columbia.edu/~lev">Lev Givon</a></p>
+        <p><a href="http://engineering.columbia.edu/"><img src="img/seas_crown.png" style="position:relative; top:-3px" width=25px/></a></p>
+        <p>Design by <a href="http://getbootstrap.com/">Bootstrap 3.1.0</a></p>
       </div>
     </div>
 

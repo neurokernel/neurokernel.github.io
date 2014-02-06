@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Neurokernel, Drosophila, brain emulation, computational neuroscience" />
-    <meta name="description" content="Join the Neurokernel Project" />
+    <meta name="description" content="Get Involved" />
     <meta name="author" content="" />
     <link rel="shortcut icon" href="ico/favicon.png" />
 
-    <title>Join the Neurokernel Project</title>
+    <title>Neurokernel</title>
 
     <!-- Make sure Ubuntu fonts are available -->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
@@ -19,6 +19,9 @@
 
     <!-- Custom styles for this template -->
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,28 +35,51 @@
 
   <body role="document">
 
-    <a href="https://github.com/neurokernel/neurokernel"><img style="z-index:9999; position: fixed; top: 0; right: 0; border: 0;" src="./img/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <!--a id="fork" href="https://github.com/neurokernel/neurokernel"><img style="z-index:9999; position: fixed; top: 0; right: 0; border:
+            0;" src="./img/forkme_right_gray_6d6d6d.png" alt="Fork me on
+    GitHub"></a-->
+    <div id="fork" class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+        <a href="https://github.com/neurokernel/neurokernel">Fork me on GitHub</a>
+        </div>
+    </div>
 
     <div id="wrap">
-      <div class="navbar-inverse navbar-default navbar-fixed-top" role="navigation">
-        <div class="navbar-inner">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">
-                <img src="./img/fly-transparent-small.png"> Neurokernel</a>				
-            </div>
-            <ul class="nav navbar-nav">
-              <li><a href="about.html">About</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-	      <li><a href="docs.html">Documents</a></li>
-	      <li><a href="people.html">People</a></li>
-              <li class="active"><a href="contact.html">Get Involved</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <div class="navbar-wrapper">
+        <div class="container">
 
-      <div class="container">      
+          <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                </button>
+                <a id="github" style="position:relative; float:right; top:12px;
+                    right:35px;" href="https://github.com/neurokernel/neurokernel">
+                    <img style="position:absolute;  width:25px;
+                    height:25px; float:right" src="img/github.png">
+                </a>
+
+                <a class="navbar-brand" href="index.html"><img src="./img/fly-transparent-small.png">Neurokernel</a>
+              </div>
+              <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="docs.html">Documents</a></li>
+                  <li><a href="people.html">People</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li class="active"><a href="contact.html">Get Involved</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- navbar-wrap -->
+
+      <div class="container">
         <div class="col-md-12">
           <div class="page-header" style="padding-top: 40px;">
             <h1>Get Involved</h1>
@@ -95,9 +121,11 @@
       </div><!--  container -->
     </div> <!-- wrap -->
 
-    <div id="footer">
-      <div class="container text-center">
-        <p>© 2013-2014 Lev Givon</p>
+    <div id=footer_wrapper>
+      <div id="footer">
+        <p>Copyright © 2013-2014 <a href="http://www.columbia.edu/~lev">Lev Givon</a></p>
+        <p><a href="http://engineering.columbia.edu/"><img src="img/seas_crown.png" style="position:relative; top:-3px" width=25px/></a></p>
+        <p>Design by <a href="http://getbootstrap.com/">Bootstrap 3.1.0</a></p>
       </div>
     </div>
 
