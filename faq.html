@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Neurokernel, Drosophila, brain emulation, computational neuroscience" />
+    <meta name="description" content="Frequently Asked Questions About Neurokernel" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="ico/favicon.png" />
+
+    <title>Frequently Asked Questions About Neurokernel</title>
+
+    <!-- Make sure Ubuntu fonts are available -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <!--a id="fork" href="https://github.com/neurokernel/neurokernel"><img style="z-index:9999; position: fixed; top: 0; right: 0; border:
+            0;" src="./img/forkme_right_gray_6d6d6d.png" alt="Fork me on
+    GitHub"></a-->
+    <div id="fork" class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+        <a href="https://github.com/neurokernel/neurokernel">Fork me on GitHub</a>
+        </div>
+    </div>
+
+    <div id="wrap">
+      <div class="navbar-wrapper">
+        <div class="container">
+
+          <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                </button>
+                <a id="github" style="position:relative; float:right; top:12px;
+                    right:35px;" href="https://github.com/neurokernel/neurokernel">
+                    <img style="position:absolute;  width:25px;
+                    height:25px; float:right" src="img/github.png">
+                </a>
+
+                <a class="navbar-brand" href="index.html"><img src="./img/fly-transparent-small.png">Neurokernel</a>
+              </div>
+              <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="docs.html">Documents</a></li>
+                  <li><a href="people.html">People</a></li>
+                  <li class="active"><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact.html">Get Involved</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- navbar-wrap -->
+
+      <div class="container">
+        <div class="col-md-12">
+          <div class="page-header" style="padding-top: 40px;">
+            <h1>Frequently Asked Questions</h1>
+          </div>
+
+          <h2>General Questions</h2>
+
+          <h4>What is Neurokernel?</h4>
+          
+          <p>Neurokernel is an open software platform implemented in Python for the emulation
+          and validation of fruit fly (<i>Drosophila melanogaster</i>) brain models
+          on multiple Graphics Processing Units (GPUs).</p>
+          
+          <h4>Isn't Neurokernel just another neural circuit simulator?</h4>
+
+          <p>In short, <i>no</i>!</p>
+
+          <p>Successfully modeling the entire brain of even a relatively "simple" organism
+          such as the fruit fly requires an architectural framework that goes beyond
+          general-purpose neural circuit simulators. Such a framework</p>
+
+          <ul>
+          <li>must be directly informed by the functional organization of
+          the fly brain,</li>
+          <li>must provide a high-level programming model,</li>
+          <li> must provide machinery needed to address the complexity of leveraging
+          widely available commodity parallel computing resources in an efficient and
+          scalable manner,</li>
+          <li>ensure that the work of multiple independent researchers focusing on
+          different parts of the fly brain remains interoperable.</li>
+          </ul>
+
+          <p>As a framework for successfully modeling the fly brain, Neurokernel
+          must serve as an operating system <i>kernel</i> vis-a-vis models of the entire
+          brain; just as an operating system must be able to <i>allocate
+          computational resources</i> and serve as an <i>extended machine</i> that
+          provides the services needed by software applications, so too must Neurokernel
+          be able to allocate parallel computational resources (i.e., available GPUs) and
+          provide the programmability (i.e., software interfaces and computational models)
+          required by the constituent elements of a fly brain model.</p>
+
+          <h4>Why does Neurokernel use GPUs rather than some other
+          high-performance computing technology?</h4>
+
+          <p>Developing a successful emulation of the fly brain is a nontrivial undertaking
+          that requires the combined efforts of many researchers. To enable and facilitate
+          this collaboration, a framework for developing and executing a fly brain model
+          must make use of a hardware which is not only powerful but available to a wide
+          range of researchers. There are a growing number of publications that
+          demonstrate the ability of GPU-based spiking neural simulators
+          (<a href="http://dx.doi.org/10.1016/j.neunet.2009.06.028">Nageswaran et al., 2009</a>,
+          <a href="http://dx.doi.org/10.1109/IJCNN.2010.5596678">Fidjeland et al., 2010</a>,
+          <a href="http://dx.doi.org/10.1186/1471-2202-12-S1-P239">Nowotny et al., 2011</a>,
+          <a href="http://dx.doi.org/10.3389/fninf.2011.00019">Richert et al., 2011</a>,
+          <a href="http://dx.doi.org/10.1109/TNNLS.2013.2276056">Minkovich et al., 2014</a>) to
+          achieve near-real-time performance for networks of at least of the magnitude of
+          the Drosophila brain (if not larger) and the possibility of increasing simulator
+          performance for such networks with the intelligent use of multiple GPUs. In
+          light of these developments and the documented increases in the speed,
+          parallelism, and data transfer bandwidth exhibited by recent generations of GPU
+          technology, clusters of GPUs appear to be the most suitable hardware substrate
+          for developing a near-real-time model of the entire fly brain at the present
+          time (2014).
+
+          <h4>The fruit fly's brain is too simple. Isn't the mammalian/primate/human brain
+          more interesting?</h4>
+
+          <p>Although the brains of higher organisms can support a range of abilities that go
+          beyond those of a fly, the number of neurons and synapses in even "simpler"
+          mammals such as the mouse are several orders of magnitude higher than those in
+          the fly and will hence require proportionally more computational horsepower to
+          attack than will be available to most researchers in the forseeable future. By
+          contrast, near-real-time simulations of neuronal networks of the magnitude of
+          the fly brain using simple spiking neuron models are becoming possible (see
+          above); it therefore seems that the already-rapid improvements in GPU technology
+          will make emulation of the entire fly brain at biological time scales using
+          somewhat biologically realistic complex neuron and synapse models achievable in
+          the near future. While it is tempting to consider scaling up the design of the
+          Neurokernel from fruit flies to mice and primates, doing so at this time would
+          be akin to scaling up the internal architecture of a novel computer architecture
+          to a cluster of interconnected computers while still optimizing the first
+          computer's architecture! Given how much more complex biological systems are in
+          comparison to existing computer architectures, Knuth's warning against premature
+          optimization is at least as relevant to brain modeling as it is to designing a
+          new computer architecture, operating system kernel, or network communication
+          scheme.</p>
+
+          <p>It's worth noting that despite obvious differences in size and complexity
+          between the fly brain and those of more complex organisms such as mammals,
+          researchers dating back to Cajal have observed common design principles in the
+          structure of their sensory subsystems. Moreover, a surprising number of genes
+          and proteins expressed in the mammalian brain are also conserved in the genome
+          of the fruit fly; this suggests that insight obtained by focusing on
+          <i>Drosophila</i> will prove useful in understanding the mammalian brain.</p>
+
+          <h4>The fruit fly's brain is far more complex than other model
+          organisms. Why not focus on them instead?</h4>
+
+          <p>Although emulation of the fly brain may superficially seem more daunting than
+          developing models of the nervous systems of simpler organisms, there are reasons
+          why the fly may be a preferable model organism. One major factor is the range of
+          complex nonreactive behaviors exhibited by the fly that can be experimentally
+          probed using a well-developed toolkit of powerful genetic techniques for
+          manipulation of its neural circuitry. Moreover, an increasing number of powerful
+          experimental methods have been developed for obtaining precise recordings of the
+          fly's neuronal responses to stimuli that are not yet available for other
+          organisms.</p>
+
+          <h2>Neurokernel Architecture</h2>
+
+          <h4>What are local processing units (LPUs) and why are they
+          significant?</h4>
+
+          <p>Determining how the brain's highly complex structure implements specific
+          functions requires its decomposition into functional modules whose input-output
+          relationships can be individually analyzed and whose interactions can be
+          explained in terms of the groups of synaptic connections that exist between
+          them. Analysis of the fruit fly connectome has revealed that its brain can be
+          decomposed into fewer than 50 distinct neural circuits, most of which correspond
+          to anatomically distinct regions in its brain.  These regions, or neuropils,
+          include sensory processing structures such as the olfactory system's antennal
+          lobe and the vision system's lamina and medulla, as well as higher level
+          structures such as the protocerebral bridge that receive input from sensory
+          modules. We refer to most of these modules as local processing units (LPUs)
+          because they are characterized by unique populations of local neurons whose
+          processes are restricted to each LPU. The fly brain also comprises modules known
+          as hubs that contain no local neurons; they appear to serve as communication
+          relays between different LPUs. In contrast to a purely anatomical subdivision,
+          the decomposition of the brain into LPUs and hubs casts the problem of reverse
+          engineering the brain as one of discovering the processing performed by each
+          individual LPU and determining how specific patterns of axonal connectivity
+          integrate them into functional subsystems.</p>
+
+          <h4>What's the difference between synaptic and axonal connectivity
+          patterns?</h4>
+
+          <p>An LPU comprises two populations of neurons, i.e., its local neurons (which
+          project exclusively to other neurons comprised by the LPU), and its projection
+          neurons (which may also project to neurons in other LPUs). Additionally, all
+          synaptic connections defined between an incoming axon and neurons within an LPU
+          are deemed to be part of the LPU. Axonal connectivity patterns between LPUs
+          refer to the existence of axons that project from one LPU to the input ports of
+          another.</p>
+
+          <h2>Using Neurokernel</h2>
+
+          <h4>How do I download and install it?</h4>
+
+          <p>See the installation instructions 
+          <a href="https://github.com/neurokernel/neurokernel/wiki/Installation">here</a>.</p>
+
+          <h4>Are there any examples of how to use Neurokernel?</h4>
+
+          <p>Yes! Take a look in the
+          <a href="https://github.com/neurokernel/neurokernel/tree/master/examples">examples</a> folder and 
+          the corresponding <a href="http://neurokernel.github.io/docs.html">IPython notebooks</a>.
+          These examples include partial models of the fly's olfactory and vision systems that are based upon 
+          actual fly connectome data.</p>
+
+          <h4>What neuron and synapse models does Neurokernel support?</h4>
+
+          <p>Neurokernel currently provides sample implementations of a select
+          number of neural component models and compatible synapse models; these
+          include a spiking neuron model (Leaky Integrate-and-Fire), a graded
+          potential neuron model (Morris-Lecar configured to not emit spikes)),
+          alpha function synapses, and a conductance-based synaptic model. These
+          components can be immediately configured via configuration files (see
+          below). We expect to extend this set of primitives with additional
+          components required by future LPU models.</p>
+
+          <h4>Can Neurokernel load LPU models specified using formats such as
+          NeuroML?</h4>
+
+          <p>Neurokernel can currently load LPU models specified in
+          <a href="http://www.gexf.net">GEXF</a>, a widely supported graph storage format that
+          is compatible with a range of Python packages and tool
+          formats. We are incorporating support for specification of neural models using
+          an extension of NeuroML 2.0 called CircuitML that will afford users with
+          additional features that facilitate the modular construction of LPU circuits. If
+          you have a proposal for a model specification mechanism with other advantages,
+          feel free to let us know!</p>
+
+          <h4>Can Neurokernel's performance be improved?</h4>
+
+          <p>Certainly.</p>
+
+          <p>The design of traditional neuronal network simulations has been
+          driven mostly by a desire to optimize performance. This is natural
+          because many of the modeling parameters in these simulations (i.e.,
+          neuron and synapse models, etc.) are assumed to remain fixed throughout
+          model execution. While constant parameters will continue to figure in
+          neural models, there is a need to place greater emphasis on
+          programmability and validation of the I/O function of neural circuits in
+          order to both enable computational neuroscientists to build upon the
+          work of their peers and facilitate the improvement of fly brain models
+          in light of new biological data.</p>
+
+          <p>Focusing on programmability before performance can be understood as analogous to
+          engineering complex systems such as the Linux kernel. Although the initial
+          implementation of Linux provided similar performance to other operating systems
+          available at the time, Linus Torvald's decisions to target a specific platform
+          (i.e., commodity x86 computers) and enforce a specific development methodology
+          (i.e., by means of a free software license) were instrumental in enabling the
+          development of the kernel into a near-ubiquitous basis for high-performance
+          operating systems.</p>
+
+          <!--<h4>What about API documentation?</h4>
+
+          <p>Right here: (link to Sphinx-generated API documentation)</p> -->
+
+          <h4>I have a question!</h4>
+
+          <p>Join the project
+          <a href="https://lists.columbia.edu/mailman/listinfo/neurokernel-dev">mailing list</a> and fire away!
+          If you encounter a bug, we encourage you to submit it via the project
+          <a href="https://github.com/neurokernel/neurokernel/issues">issue tracker</a>.</p>
+
+          <h2>How to Participate in Neurokernel Development</h2>
+
+          <h4>What is an RFC and why are they important to Neurokernel's
+          development?</h4>
+
+          <p>First employed in the development of the Internet (see
+          <a href="http://tools.ietf.org/html/rfc2026">RFC 2026</a>) and used more recently in
+          the development of the Python programming language (in the guise of
+          <a href="http://www.python.org/dev/peps/">Python Enhancement Proposals (PEPs)</a>),
+          RFCs are design proposals of a complex system's major components that are made
+          available to the system's developers and other interested parties in order to
+          elicit feedback (or "comments"). Once published, an RFC may be superseded by a
+          newer RFC that incorporates modifications made in response to feedback. This
+          process enables RFCs to both serve as authoritative specifications of a system's
+          design (if deemed acceptable) and an archive of that system's design
+          development. All published Neurokernel RFCs are publicly available on the
+          <a href="http://neurokernel.github.io/docs">project website</a>.</p>
+
+          <p>Submitted RFCs must either be explicitly placed in the public domain or 
+          released under the <a href="http://www.opencontent.org/openpub/">Open Publication
+            License</a>.</p>
+
+          <h4>Can I submit an RFC? How do I go about it?</h4>
+
+          <p>Yes! Contact the Neurokernel developers via the project mailing list to have
+          your RFC reviewed and uploaded to the Neurokernel site.</p>
+
+          <h4>I'm interested in modeling a certain LPU. Has it already been
+            modeled?</h4>
+
+          <p>A list of the LPUs and hubs in the fly brain with links to currently implemented
+          models is available on the project
+          <a href="https://github.com/neurokernel/neurokernel/wiki/LPU-List">wiki</a>.</p>
+
+          <h4>I've written a new Neurokernel-based LPU model. How can I share it?</h4>
+
+          <p>Submit the model as a 
+          <a href="http://github.com/neurokernel/neurokernel/pulls">pull request</a>
+          on GitHub and write an RFC describing details of the model.</p>
+
+          <h4>I want to propose a Great New Feature for Neurokernel. How can I do
+            so?</h4>
+
+          <p>Feel free to moot your idea on the project mailing list. If the
+          feature is nontrivial and cannot be described briefly, writing an RFC
+          that clearly delineates the proposal would be very helpful.</p>
+
+          <h4>I've written some new code for Neurokernel. How can I have it
+          incorporated into the project's code base?</h4>
+
+          <p>Submit your new code as a pull request or (if the code is relatively brief) an
+          enhancement issue. Note that Neurokernel is developed under the 
+          open-source <a href="http://www.opensource.org/licenses/bsd-license.php">BSD
+          license</a>; all code contributed to the project must be released under
+          copyright terms that are compatible with this license. Please consult
+          with a competent legal authority if you are uncertain about the
+          compatibility of your code's license.</p>
+
+        </div>
+
+      </div><!-- container -->
+    </div><!-- wrap -->
+
+    <div id=footer_wrapper>
+      <div id="footer">
+        <p>Copyright © 2013-2014 <a href="http://www.columbia.edu/~lev">Lev Givon</a></p>
+        <p><a href="http://engineering.columbia.edu/"><img src="img/seas_crown.png" style="position:relative; top:-3px" width=25px/></a></p>
+        <p>Design by <a href="http://getbootstrap.com/">Bootstrap 3.1.0</a></p>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

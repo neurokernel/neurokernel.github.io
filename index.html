@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Neurokernel, Drosophila, brain emulation, computational neuroscience" />
+    <meta name="description" content="Neurokernel Project" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="ico/favicon.png" />
+
+    <title>Neurokernel</title>
+
+    <!-- Make sure Ubuntu fonts are available -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body role="document">
+
+    <!--a id="fork" href="https://github.com/neurokernel/neurokernel"><img style="z-index:9999; position: fixed; top: 0; right: 0; border:
+            0;" src="./img/forkme_right_gray_6d6d6d.png" alt="Fork me on
+    GitHub"></a-->
+    <div id="fork" class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+        <a href="https://github.com/neurokernel/neurokernel">Fork me on GitHub</a>
+        </div>
+    </div>
+
+    </div> <div id="wrap">
+      <div class="navbar-wrapper">
+        <div class="container">
+
+          <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                </button>
+                <a id="github" style="position:relative; float:right; top:12px;
+                    right:35px;" href="https://github.com/neurokernel/neurokernel">
+                    <img style="position:absolute;  width:25px;
+                    height:25px; float:right" src="img/github.png">
+                </a>
+
+                <a class="navbar-brand" href="index.html"><img src="./img/fly-transparent-small.png">Neurokernel</a>
+              </div>
+              <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="docs.html">Documents</a></li>
+                  <li><a href="people.html">People</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact.html">Get Involved</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- navbar-wrap -->
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class = "active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <div class = "carousel-inner" >
+            <div class = "item active">
+                <img class="img-responsive" src="./img/banner_intro.png" alt="fly" width="100%">
+                <div class="container">
+                <div class="carousel-caption">
+                    <img src="./img/fly.png" alt="Fly" width="200px">
+                    <h1>Neurokernel</h1>
+                    <p>A framework for emulating the fruit fly brain</p>
+                </div>
+                </div>
+            </div>
+            <div class = "item">
+                <img class="img-responsive" src="./img/banner_vivo.png" alt="vivo" width="100%">
+                <div class="container">
+                <div class="carousel-caption">
+                    <h1>From in vivo to in silico</h1>
+                </div>
+                </div>
+            </div>
+            <div class = "item">
+                <img class="img-responsive" src="./img/banner_circuit.png"
+                alt="circuit" width="100%">
+                <div class="container">
+                <div class="carousel-caption">
+                    <h1>Modeling the fly brain</h1>
+                </div>
+                </div>
+            </div>
+            <div class = "item">
+                <img class="img-responsive" src="./img/banner_code.png" alt="code" width="100%">
+                <div class="container">
+                <div class="carousel-caption">
+                    <h1>Developed in Python and CUDA</h1>
+                    <img src="./img/python.png" alt=""  />
+                    <img src="./img/cuda.png" alt=""  />
+                </div>
+                </div>
+            </div>
+            <div class = "item">
+                <img class="img-responsive" src="./img/banner_ipynb.png"
+                alt="ipynb" width="100%">
+                <div class="container">
+                <div class="carousel-caption">
+                    <h1>IPython Notebook demos</h1>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+      </div><!-- /.carousel -->
+
+
+      <div class="container marketing">
+        <div class="col-md-6">
+          <h1>What Is It?</h1>
+
+          <p>The Neurokernel Project aims to build an open software platform for
+          the emulation of the entire brain of the fruit fly <i>Drosophila melanogaster</i> on
+          multiple Graphics Processing Units (GPUs).</p>
+        </div>
+        <div class="col-md-6">
+          <h1>How Can I Try It?</h1>
+
+          <p>Interested? Great! Clone the source from 
+            <a href="https://github.com/neurokernel/neurokernel">GitHub</a>,
+            <a href="https://lists.columbia.edu/mailman/listinfo/neurokernel-dev">join</a> the project 
+mailing list, and start submitting <a href="http://github.com/neurokernel/neurokernel/pulls">pull requests</a> and <a href="http://github.com/neurokernel/neurokernel/issues">bug reports</a>.</p>
+        </div>
+      </div><!-- container -->
+    </div><!-- wrap -->
+
+    <!-- footer
+    ================================================== -->
+    <div id=footer_wrapper>
+      <div id="footer">
+        <p>Copyright © 2013-2014 <a href="http://www.columbia.edu/~lev">Lev Givon</a></p>
+        <p><a href="http://engineering.columbia.edu/"><img src="img/seas_crown.png" style="position:relative; top:-3px" width=25px/></a></p>
+        <p>Design by <a href="http://getbootstrap.com/">Bootstrap 3.1.0</a></p>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
