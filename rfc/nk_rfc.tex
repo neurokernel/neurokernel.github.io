@@ -1,0 +1,75 @@
+% !TEX TS-program = pdflatex
+
+\documentclass[12pt]{article}
+\usepackage{geometry}            % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}           % ... or a4paper or a5paper or ...
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage{verbatim}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{lscape}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{verbatim}
+\usepackage{helvet}
+\usepackage{float}
+\usepackage[caption=false]{subfig}
+\usepackage{calc}
+\usepackage{xspace}
+\usepackage{pifont}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{placeins}
+\usepackage{epstopdf}
+\usepackage{natbib}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+% with this we ensure that the chapter and section headings are in lowercase.
+\fancyhf{}                                       % delete current header and footer
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\rightmark}
+\fancyhead[RE]{\leftmark}
+\fancyfoot[LO,RE]{Neurokernel RFC \#N}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\addtolength{\headheight}{0.6pt}                 % space for the rule
+\addtolength{\headsep}{5pt}                      % space for the rule
+\fancypagestyle{plain}{
+  \fancyhead{}                                   % get rid of headers on plain pages
+  \renewcommand{\headrulewidth}{0.0pt}           % and the line
+}
+
+\title{Title of Neurokernel RFC \# N\\
+{\large Neurokernel RFC \# N}
+}
+
+\author{Authors\\
+Affiliations
+}
+%\date{}                                          % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Section}
+\subsection{subsection}
+
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
