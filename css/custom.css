@@ -174,7 +174,7 @@ body {
 }
 
 .github-fork-ribbon a {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .github-fork-ribbon > a:hover {
   opacity: 1.0;
@@ -306,10 +306,16 @@ body {
 }
 
 .latex > sup {
-  font-size: 0.85em;
+  font-size: 0.7em;
   vertical-align: -0.15em;
   margin-left: -0.36em;
   margin-right: -0.15em;
+}
+
+/* h4
+-------------------------------------------------- */
+h4 {
+    color: #000000;
 }
 
 /* RESPONSIVE CSS
