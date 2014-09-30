@@ -83,8 +83,9 @@ body {
 /* GITHUB INFO
 ------------------------------*/
 .bs-docs-social {
-  padding: 5px 0;
-  margin-top: -60px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  margin-top: -61px;
   text-align: center;
   background-color: #f5f5f5;
   border-top: 1px solid #fff;
