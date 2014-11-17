@@ -442,3 +442,14 @@ h4 {
     width: 100%;
     height: 100%;
 }
+
+/* display media objects properly in list */
+
+.custom-media-object {
+    display: inline;
+}
+
+.custom-media-body {
+    display: inline;
+    padding-left: 30px;
+}
