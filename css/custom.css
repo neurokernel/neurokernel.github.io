@@ -163,10 +163,10 @@ body {
     opacity: 1.0;
 }
 
-#github > img {
+.github > img {
     opacity: 0.8;
 }
-#github > img:hover {
+.github > img:hover {
     opacity: 1.0;
 }
 
