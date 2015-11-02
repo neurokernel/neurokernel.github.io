@@ -363,7 +363,7 @@ h4 {
 
 @media (min-width: 768px) {
 
-  a#github { display:none; }
+  a#git { display:none; }
   /* Remove the edge padding needed for mobile */
   .marketing {
     padding-left: 0;
