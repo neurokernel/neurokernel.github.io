@@ -35,7 +35,7 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
+.carousel.index-page {
   height: 500px;
   margin-bottom: 60px;
 }
@@ -45,10 +45,11 @@ body {
 }
 
 /* Declare heights because of positioning of img element */
-.carousel .item {
+.carousel .item.index-page {
   height: 500px;
   background-color: #72C8FF;
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -56,8 +57,113 @@ body {
   min-width: 100%;
   height: 500px;
 }
+/*
+.carousel-inner > .item.news {
+  top: 0;
+  left: 0;
+  height: 450px;
+  width: 100%;
+  border: 0px;
+  border-style: solid;
+  border-color: #0000ff;
+
+}
+*/
+.carousel-inner > .item.news > iframe,
+.carousel-inner > .item.news > img{
+  position: relative;
+  center: auto;
+  min-width: 100%;
+  width: auto;
+}
+.carousel-inner > .item.news > img {
+  height: auto;
+}
+.carousel-inner > .item.news > iframe {
+  height: 300px;
+}
+.carousel-control.left.news, .carousel-control.right.news {
+  background-image: none
+}
+
+.carousel-control.news {
+  position: absolute;
+  top: 25.5px;
+  bottom: 0;
+  left: 0;
+  background: #000000;
+  font-size: 5px;
+  background: none !important;
+  color: #000 !important;
+  text-align: center;
+}
+
+.carousel-control.news i {
+  font-size: 20px;
+}
+
+.carousel-control.left.news {
+  left: 0;
+}
+
+.carousel-control.right.news {
+  right: 0;
+}
+
+.carousel-control.news:hover,
+.carousel-control.news:focus {
+  color: #000;
+}
+
+.carousel-control.news .glyphicon-chevron-left,
+.carousel-control.news .glyphicon-chevron-right {
+  position: absolute;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-control.news .glyphicon-chevron-left {
+  left: 0;
+}
+
+.carousel-control.news .glyphicon-chevron-right {
+  right: 0;
+}
+.carousel-indicators.news {
+  position: relative;
+  bottom: 0;
+  right: 0px;
+  z-index: 15;
+  width: 60%;
+  top: -5px;
+  text-align: center;
+  list-style: none;
+}
 
 
+.carousel-indicators.news li {
+  display: inline-block;
+  zoom: 1;
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  background: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  -webkit-box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+  -moz-box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+  box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+  cursor: pointer;
+}
+
+.carousel-indicators.news .active {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  background-color: #000000;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
