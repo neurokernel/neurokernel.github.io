@@ -1,10 +1,6 @@
 $('.carousel.news').carousel({
   interval: 1000 * 10
 });
-
-var active_video_mask;
-var active_iframe;
-
 $('.video_mask').click(function(){
   iframe = $(this).closest('.item.news').find('iframe');
   iframe_source = iframe.attr('src');
@@ -14,8 +10,6 @@ $('.video_mask').click(function(){
   $(this).toggle();
   // stop the slideshow
   $('.carousel.news').carousel('pause');
-
-  active_iframe = iframe;
 });
 $('.carousel.news').bind('slide.bs.carousel', function(){
   // var iframeID = $(this).find('.iframe.active').attr("id");
@@ -24,7 +18,6 @@ $('.carousel.news').bind('slide.bs.carousel', function(){
   $('.video_mask').show();
   // reset src of all videos
   $('.carousel.news').find('iframe').each(function(key, value){
-    console.log($(this));
     $(this).stop();
     url = $(this).attr('src');
     if(url.indexOf("autoplay")>0){
