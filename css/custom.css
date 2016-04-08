@@ -259,17 +259,17 @@ body {
 #footer > p:first-child {
     float: left;
     text-align: right;
-    width: 45.0%; }
+    width: 40.0%; }
 
 #footer > p:nth-child(2) {
     float: left;
     text-align: center;
-    width: 10.0%; }
+    width: 30.0%; }
 
 #footer > p:last-child {
     float: right;
     text-align: left;
-    width: 45.0%; }
+    width: 30.0%; }
 
 
 #fork > img {
